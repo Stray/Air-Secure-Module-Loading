@@ -1,0 +1,103 @@
+9
+
+dir
+282
+http://newloop.unfuddle.com/svn/newloop_newloopas3/com/newloop
+http://newloop.unfuddle.com/svn/newloop_newloopas3
+
+
+
+2009-07-08T11:23:44.732802Z
+280
+lindz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6f468ffd-163d-4e58-8140-dce97f96cc4f
+
+cms
+dir
+
+text
+dir
+
+components
+dir
+
+forms
+dir
+
+accessibility
+dir
+
+loaders
+dir
+
+math
+dir
+
+datautils
+dir
+
+thingsthatmatter
+dir
+
+drawing
+dir
+
+games
+dir
+
+unittests
+dir
+
+tests
+dir
+
+animations
+dir
+
+timers
+dir
+
+controllers
+dir
+
+galleries
+dir
+
+dynamics
+dir
+
+air
+dir
+
+libraries
+dir
+
+learninggames
+dir
+
+navigators
+dir
+
+joe
+dir
+
+util
+dir
+
+array
+dir
+

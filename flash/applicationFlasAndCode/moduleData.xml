@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<moduleConfig>
+	<moduleData>
+		<moduleIdentifier_txt>GoodModuleA</moduleIdentifier_txt>
+		<moduleName_txt>Good Module A</moduleName_txt>
+		<moduleLocalPath_fp>GoodModuleAPackage/GoodModuleA.swf</moduleLocalPath_fp>
+		<moduleResourcePath_fp><![CDATA[http://www.newloop-clients.co.uk/module_resource_tests/GoodModuleA.zip]]></moduleResourcePath_fp>
+		<isLoadToApplication_boo>1</isLoadToApplication_boo>
+	</moduleData>
+	<moduleData>
+		<moduleIdentifier_txt>GoodModuleB</moduleIdentifier_txt>
+		<moduleName_txt>Good Module B</moduleName_txt>
+		<moduleLocalPath_fp>GoodModuleBPackage/GoodModuleB.swf</moduleLocalPath_fp>
+		<moduleResourcePath_fp><![CDATA[http://www.newloop-clients.co.uk/module_resource_tests/GoodModuleB.zip]]></moduleResourcePath_fp>
+		<isLoadToApplication_boo>1</isLoadToApplication_boo>
+	</moduleData>
+	<moduleData>
+		<moduleIdentifier_txt>BadModule</moduleIdentifier_txt>
+		<moduleName_txt>Bad Module</moduleName_txt>
+		<moduleLocalPath_fp>BadModulePackage/BadModule.swf</moduleLocalPath_fp>
+		<moduleResourcePath_fp><![CDATA[http://www.newloop-clients.co.uk/module_resource_tests/BadModule.zip]]></moduleResourcePath_fp>
+		<isLoadToApplication_boo>1</isLoadToApplication_boo>
+	</moduleData>
+	<moduleData>
+		<moduleIdentifier_txt>SafeModule</moduleIdentifier_txt>
+		<moduleName_txt>Safe Module A</moduleName_txt>
+		<moduleLocalPath_fp>SafeModulePackage/SafeModule.swf</moduleLocalPath_fp>
+		<moduleResourcePath_fp><![CDATA[http://www.newloop-clients.co.uk/module_resource_tests/SafeModule.zip]]></moduleResourcePath_fp>
+		<isLoadToApplication_boo>0</isLoadToApplication_boo>
+	</moduleData>
+</moduleConfig>

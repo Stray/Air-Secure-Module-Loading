@@ -1,0 +1,1 @@
+﻿package com.newloop.util{	import flash.text.Font;	public class FontUtilities {		public function FontUtilities() {		}		public static function traceFonts():void {			var fontList:Array = Font.enumerateFonts(false);			var iLength:uint = fontList.length;			for (var i:uint = 0; i<iLength; i++) {				trace(fontList[i].fontName);			}		}	}}

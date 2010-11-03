@@ -1,0 +1,71 @@
+/* AS3
+	Copyright 2009 __MyCompanyName__.
+*/
+package com.newloop.util {
+	
+	/**
+	 *	Class description.
+	 *
+	 *	@langversion ActionScript 3.0
+	 *	@playerversion Flash 9.0
+	 *
+	 *	@author Lindsey Fallow
+	 *	@since  12.02.2009
+	 */
+	public class PrintR extends Object {
+		
+		//--------------------------------------
+		// CLASS CONSTANTS
+		//--------------------------------------
+		
+		//--------------------------------------
+		//  CONSTRUCTOR
+		//--------------------------------------
+		
+		/**
+		 *	@Constructor
+		 */
+		public function PrintR(){
+			super();
+		}
+		
+		//--------------------------------------
+		//  PRIVATE VARIABLES
+		//--------------------------------------
+		
+		//--------------------------------------
+		//  GETTER/SETTERS
+		//--------------------------------------
+		
+		//--------------------------------------
+		//  PUBLIC METHODS
+		//--------------------------------------
+
+		//--------------------------------------
+		//  EVENT HANDLERS
+		//--------------------------------------
+		
+		//--------------------------------------
+		//  PRIVATE & PROTECTED INSTANCE METHODS
+		//--------------------------------------
+		
+		public static function print_r(obj:*, level:int = 0, output:String = ""):* {
+		    var tabs:String = "";
+		    for(var i:int = 0; i < level; i++, tabs += "\t");
+
+		    for(var child:* in obj){
+		        output += tabs +"["+ child +"] => "+ obj[child];
+
+		        var childOutput:String = print_r(obj[child], level+1);
+		        if(childOutput != '') output += ' {\n'+ childOutput + tabs +'}';
+
+		        output += "\n";
+		    }
+
+		    if(level == 0) trace(output);
+		    else return output;
+		}
+		
+	}
+	
+}

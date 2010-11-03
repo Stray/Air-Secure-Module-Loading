@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="ModuleChainLoader,com.newloop.air.moduleloading.ModuleChainLoader,getModuleDictionary,startLoadingModules" name="keywords">
+<title>com.newloop.air.moduleloading.ModuleChainLoader</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'ModuleChainLoader - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/newloop/air/moduleloading/ModuleChainLoader.html&amp;com/newloop/air/moduleloading/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;ModuleChainLoader</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class ModuleChainLoader"); titleBar_setSubNav(false,false,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.newloop.air.moduleloading</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class ModuleChainLoader</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ModuleChainLoader <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p>
+   ModuleChainLoader accepts an iterator of ModuleDescriptions and then installs and loads the modules, with package sig verification
+  The process is basically: <b>more modules? install -> load</b>, where modules are loaded into the application sandbox if requested and
+  if they pass the security certificate check, and into the non-application sandbox if application loading isn't requested.
+  Modules requesting loading to the application sandbox and not passing the security check are not loaded at all.
+  
+     <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ModuleChainLoader()">ModuleChainLoader</a>(moduleDescriptionIterator:<a href="ModuleDescriptionIterator.html">ModuleDescriptionIterator</a>, isErrorSilently:Boolean = true)</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol">ModuleChainLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getModuleDictionary()">getModuleDictionary</a>():<a href="../moduleloading/ModuleDictionary.html">ModuleDictionary</a>
+</div>
+<div class="summaryTableDescription">
+   Get the dictionary of loaded modules - will return null until the COMPLETE event has fired
+   </div>
+</td><td class="summaryTableOwnerCol">ModuleChainLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#startLoadingModules()">startLoadingModules</a>():void</div>
+<div class="summaryTableDescription">
+   Begin the process of installing and loading modules
+   </div>
+</td><td class="summaryTableOwnerCol">ModuleChainLoader</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:debugMessage">debugMessage</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+  Dispatched when there's a debug message to report to the developer.</td><td class="summaryTableOwnerCol">ModuleChainLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:moduleLoadingComplete">moduleLoadingComplete</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+  Dispatched when all modules have completed loading (even if some failed) 
+    </td><td class="summaryTableOwnerCol">ModuleChainLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:moduleProgressUpdate">moduleProgressUpdate</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+  Dispatched when there's progress to update the user about
+    </td><td class="summaryTableOwnerCol">ModuleChainLoader</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="ModuleChainLoader()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ModuleChainLoader</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function ModuleChainLoader(moduleDescriptionIterator:<a href="ModuleDescriptionIterator.html">ModuleDescriptionIterator</a>, isErrorSilently:Boolean = true)</code><p>
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">moduleDescriptionIterator</span>:<a href="ModuleDescriptionIterator.html">ModuleDescriptionIterator</a></code> &mdash; An iterator of the descriptions of modules to be loaded.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">isErrorSilently</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Defaults true. If false, failed loading attempts will throw an error.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getModuleDictionary()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getModuleDictionary</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getModuleDictionary():<a href="../moduleloading/ModuleDictionary.html">ModuleDictionary</a></code><p>
+   Get the dictionary of loaded modules - will return null until the COMPLETE event has fired
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../moduleloading/ModuleDictionary.html">ModuleDictionary</a></code></td>
+</tr>
+</table>
+</div>
+<a name="startLoadingModules()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">startLoadingModules</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function startLoadingModules():void</code><p>
+   Begin the process of installing and loading modules
+   </p></div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:debugMessage"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">debugMessage</td><td class="detailHeaderType">event&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href=""><code>com.newloop.air.moduleloading.events.DEBUG_MESSAGE</code></a>
+<br>
+<p></p><p>
+  Dispatched when there's a debug message to report to the developer.
+  These debug messages are necessary because the signature check
+  will only run in the actual air application, not the test player,
+  so 'trace' commands don't work.
+    </p></div>
+<a name="event:moduleLoadingComplete"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moduleLoadingComplete</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="events/ModuleEvent.html"><code>com.newloop.air.moduleloading.events.ModuleEvent</code></a>
+<br>
+<p></p><p>
+  Dispatched when all modules have completed loading (even if some failed) 
+    </p></div>
+<a name="event:moduleProgressUpdate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moduleProgressUpdate</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="events/ModuleEvent.html"><code>com.newloop.air.moduleloading.events.ModuleEvent</code></a>
+<br>
+<p></p><p>
+  Dispatched when there's progress to update the user about
+    </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">newloop</center>
+</div>
+</body>
+</html>
+<!--newloop-->

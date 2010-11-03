@@ -1,0 +1,34 @@
+<?xml version ="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/1.5">
+	<id>remoteModuleTester.ModuleA</id>
+	<version>1.0</version>
+	<filename>ModuleA</filename>
+	<!-- To localize the description, use the following format for the description element.
+	<description>
+		<text xml:lang="en">English App description goes here</text>
+		<text xml:lang="fr">French App description goes here</text>
+		<text xml:lang="ja">Japanese App description goes here</text>
+	</description>
+	-->
+	<name>CompareGrid</name>
+	<!-- To localize the name, use the following format for the name element.
+	<name>
+		<text xml:lang="en">English App name goes here</text>
+		<text xml:lang="fr">French App name goes here</text>
+		<text xml:lang="ja">Japanese App name goes here</text>
+	</name>
+	-->
+	<initialWindow>
+		<content>ModuleA.swf</content>
+		<systemChrome>standard</systemChrome>
+		<transparent>false</transparent>
+		<visible>true</visible>
+	</initialWindow>
+	<customUpdateUI>false</customUpdateUI>
+	<allowBrowserInvocation>false</allowBrowserInvocation>
+<!--	<icon>
+	<image16x16></image16x16>
+	<image32x32></image32x32>
+	<image48x48></image48x48>
+	<image128x128></image128x128></icon> -->
+</application>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<moduleConfig>
+	<moduleData>
+		<moduleIdentifier_txt>Mod A</moduleIdentifier_txt>
+		<moduleName_txt>module A</moduleName_txt>
+		<moduleLocalPath_fp>myModules/ModuleA.swf</moduleLocalPath_fp>
+		<moduleResourcePath_fp><![CDATA[http://localhost/moduleA.zip]]></moduleResourcePath_fp>
+		<isLoadToApplication_boo>1</isLoadToApplication_boo>
+		<isForceInstall>1</isForceInstall>
+	</moduleData>
+</moduleConfig>
