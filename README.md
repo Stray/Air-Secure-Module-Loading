@@ -9,6 +9,6 @@ Interested?  [Read more here.](http://flair-flash-flex-air.blogspot.com/2009/09/
 
 **What's in the tools folder?**
 
-A benefit of modular development is that you can do frequent releases - but packaging up swfs to signed zips, and uploading them to your server can be a bit time consuming, so there's a script in there that automates those steps, and an example -app descriptor file that is set up for the version numbering to change.
+A benefit of modular development is that you can do frequent releases - but packaging up swfs to signed zips, and uploading them to your server, can be a bit time consuming, so there's a script in there that automates those steps, and an example -app descriptor file that is set up for the version numbering to change.
 
 I still like to update the required version number manually - it allows me to push up a new set of modules and release them together, or to a group of 'beta' users ahead of releasing to everybody.      
